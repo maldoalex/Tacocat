@@ -43,34 +43,35 @@
     </div>
   </nav>
 
-  <!-- Jumbotron Section -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-3">TacocaT</h1>
-      <p class="lead">Code</p>
-      <hr class="my-2">
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="solve.html" role="button">See it in action</a>
-      </p>
-    </div>
-  </div>
-
   <script type="text/plain" class="language-markup line-numbers">
     <div class="container">
-    <div class="row">
-      <!-- Col 2 is an input -->
-      <div class="col">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
         <input id="word" type="text" class="form-control" placeholder="Enter word">
       </div>
-      <!-- Col 3 is a button -->
-      <div class="col">
-        <button class="btn btn-dark" id="btnWord">Check</button>
-      </div>
     </div>
-    <!-- Create a second row for the output -->
-    <div class="row">
-      <div class="col">
-        <p id="output"></p>
+    <div class="row my-5 d-flex justify-content-center">
+      <div class="col-md-6">
+        <!-- Card -->
+        <div class="card">
+          <!-- Card image -->
+          <img class="img-fluid" src="/img/tenet.png" alt="Card image cap">
+          <!-- Card content -->
+          <div class="card-body close text-center" id="card-body">
+            <!-- Title -->
+            <h4 class="card-title font-weight-bold pt-1 pb-2">
+              <div class="container">
+                <div class="row">
+                  <!-- Check button -->
+                  <div class="col">
+                    <button class="btn btn-dark" id="btnWord">Check</button>
+                  </div>
+                </div>
+            </h4>
+            <!-- Text -->
+            <div class="card-text my-5 align-content-center justify-content-center" id="output"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
