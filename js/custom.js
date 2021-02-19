@@ -1,38 +1,37 @@
-
-    document.getElementById("btnWord").addEventListener("click", function () {
+document.getElementById("btnWord").addEventListener("click", function () {
       let word = document.getElementById("word").value;
-    isPalindrome(word);
+      isPalindrome(word);
     });
 
-
-
-
-function isPalindrome(word) {
-    if (word == word.split('').reverse().join('')) {
-        // alert(word + ' is palindrome.');
-        document.getElementById("card-body").innerHTML = word + " is a palindrome!";
+function isPalindrome(word) 
+{
+    if (word == word.split('').reverse().join('')) 
+    {
+      document.getElementById("card-body").innerHTML = word + " is a palindrome!";
+      let card = document.getElementById("card-body");
+      if(card.style.display == "none")
+      {
+        card.style.display = "block";
+      }
     }
-    else {
-        document.getElementById("card-body").innerHTML = word + " is not a palindrome!";
+    else 
+    {
+      document.getElementById("card-body").innerHTML = word + " is not a palindrome!";
+      let card = document.getElementById("card-body");
+      if(card.style.display == "none")
+      {
+        card.style.display = "block";
+      }
     }
 }
 
 
 $('.card').click(function() {
-  $('.card-body').toggleClass('close');
+  let card = document.getElementById("card-body");
+  if(card.style.display == "block")
+  {
+    card.style.display = "none";
+  }
   document.getElementById("word").value = "";
+  document.getElementById("card-body").innerHTML = "";
 });
-
-
-
-{/* <div class="col">
-                    <input id="word" type="text" class="form-control" placeholder="Enter word">
-                  </div> */}
-
-
-            //       <div class="row">
-            //       <div class="col">
-            //         <p id="output"></p>
-            //       </div>
-            //     </div>
-            //   </div>

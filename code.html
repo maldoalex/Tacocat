@@ -44,12 +44,20 @@
   </nav>
 
   <script type="text/plain" class="language-markup line-numbers">
-    <div class="container">
+   <!-- Input Field -->
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <input id="word" type="text" class="form-control" placeholder="Enter word">
       </div>
     </div>
+    <div class="row justify-content-center">
+      <!-- Check button -->
+      <div class="col-md-6">
+        <button class="btn btn-dark" id="btnWord">Check</button>
+      </div>
+    </div>
+    <!-- Container Output -->
     <div class="row my-5 d-flex justify-content-center">
       <div class="col-md-6">
         <!-- Card -->
@@ -57,24 +65,13 @@
           <!-- Card image -->
           <img class="img-fluid" src="/img/tenet.png" alt="Card image cap">
           <!-- Card content -->
-          <div class="card-body close text-center" id="card-body">
-            <!-- Title -->
-            <h4 class="card-title font-weight-bold pt-1 pb-2">
-              <div class="container">
-                <div class="row">
-                  <!-- Check button -->
-                  <div class="col">
-                    <button class="btn btn-dark" id="btnWord">Check</button>
-                  </div>
-                </div>
-            </h4>
-            <!-- Text -->
-            <div class="card-text my-5 align-content-center justify-content-center" id="output"></div>
-          </div>
+          <h2 class="card-body text-center" style="display: none" id="card-body">
+          </h2>
         </div>
       </div>
     </div>
   </div>
+
   </script>
 
 
